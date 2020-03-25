@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="menu">
+    <fragment
+        android:id="@+id/menul"
+        android:name="com.reynaldo.leo.uts.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_constraint"
+            app:destination="@id/constraint" />
+        <action
+            android:id="@+id/action_menu_to_linear"
+            app:destination="@id/linear" />
+    </fragment>
+    <fragment
+        android:id="@+id/constraint"
+        android:name="com.reynaldo.leo.uts.Constraint"
+        android:label="fragment_constraint"
+        tools:layout="@layout/fragment_constraint" />
+    <fragment
+        android:id="@+id/linear"
+        android:name="com.reynaldo.leo.uts.Linear"
+        android:label="fragment_linear"
+        tools:layout="@layout/fragment_linear" />
+</navigation>
